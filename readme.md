@@ -70,6 +70,6 @@ This project demonstrates:
 
 ##  Author
 
-**Sangam Sharma**\
+**Sangam Sharma**
 
 
