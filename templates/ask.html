@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Career Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+        button {
+            margin-top: 15px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Ask About Your Career</h2>
+
+    <form method="POST">
+        <input type="hidden" name="resume_id" value="{{ resume_id }}">
+        <textarea name="query" placeholder="e.g. What roles suit my profile?" required></textarea>
+        <button type="submit">Ask</button>
+    </form>
+</div>
+
+</body>
+</html>

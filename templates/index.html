@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Coach AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            width: 420px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Career Coach AI</h2>
+    <p>Upload your resume (PDF) to get career insights</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <br>
+        <button type="submit">Analyze Resume</button>
+    </form>
+</div>
+
+</body>
+</html>

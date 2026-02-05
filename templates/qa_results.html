@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Coach Answer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9fafb;
+            padding: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        .question {
+            background: #eef2ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .answer {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #4f46e5;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+        a:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Your Question</h3>
+    <div class="question">{{ query }}</div>
+
+    <h3>AI Answer</h3>
+    <div class="answer">{{ result }}</div>
+
+    <a href="/ask?resume_id={{ resume_id }}">Ask another question</a>
+    <br><br>
+
+    <a href="/">Upload Another Resume</a>
+</div>
+
+</body>
+</html>

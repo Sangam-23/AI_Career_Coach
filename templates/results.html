@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9fafb;
+            padding: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        pre {
+            white-space: pre-wrap;
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .actions {
+            margin-top: 20px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            background: #4f46e5;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+        a:hover {
+            background: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Resume Analysis</h2>
+
+    <pre>{{ resume_analysis }}</pre>
+
+    <div class="actions">
+        <form action="/ask" method="GET">
+            <input type="hidden" name="resume_id" value="{{ resume_id }}">
+            <button type="submit">Ask Questions About Resume</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
